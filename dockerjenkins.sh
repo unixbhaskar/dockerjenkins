@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "I am the one"
 # First, make sure that cgroups are mounted correctly.
 CGROUP=/sys/fs/cgroup
 
