@@ -5,4 +5,6 @@ node {
   echo  'Groovy script 2'
 }
 
-
+node {
+    sh 'echo `docker info`'
+}
