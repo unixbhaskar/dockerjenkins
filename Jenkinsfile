@@ -6,5 +6,5 @@ node {
 }
 
 node {
-    sh 'echo `docker info`'
+    sh 'docker info'
 }
