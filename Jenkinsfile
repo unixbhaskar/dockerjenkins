@@ -1,10 +1,8 @@
 node {
-  stage 'Multibranch testing 1'
-  echo  'Groovy script 1'
-  stage 'Multibranch testing 2'
-  echo  'Groovy script 2'
+  stage 'Pipeline 1'
+  echo  'testing'
+  stage 'Pipeline 2'
+  echo  'testing 2'
 }
 
-node {
-    sh 'docker info'
-}
+
