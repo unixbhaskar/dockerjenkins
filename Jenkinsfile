@@ -11,13 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh '/home/bhaskar/AdmScripts/kernel_module_list.sh'
+		sh 'uname -a'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh '/home/bhaskar/AdmScripts/osstat'
+		sh 'who -r'
             }
         }
     }
