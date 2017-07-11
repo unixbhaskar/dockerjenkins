@@ -24,7 +24,8 @@ pipeline {
     post {
         always {
 	    mail to : 'unixbhaskar@gmail.com',
-                 subject : "Checking post hook"
+                 subject : "Checking post hook",
+		   body  : "heck"
    }	   
  }  
 }
