@@ -22,3 +22,12 @@ pipeline {
         }
     }
 }
+
+post {
+     success {
+
+       mail to : 'unixbhaskar@gmail.com'
+            subject : "success pipeline"
+    }
+
+}	    
