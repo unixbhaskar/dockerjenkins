@@ -21,5 +21,9 @@ pipeline {
             }
         }
     }
+    post {
+       mail to : 'unixbhaskar@gmail.com',
+           subject : "Checking post hook"
+   }	   
 }
 
