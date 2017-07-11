@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh '/home/bhaskar/AdmScripts/disk_usage_monitor.sh'
+		sh 'ls -lath'
             }
         }
         stage('Test') {
