@@ -11,13 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'uname -a'
+		sh 'ipcs'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-		sh 'who -r'
+		sh 'vmstat 1 1'
             }
         }
     }
