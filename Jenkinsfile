@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen2'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen3'
             }
         }
 	
@@ -26,7 +26,7 @@ pipeline {
         always {
 	    mail to : 'unixbhaskar@gmail.com',
                  subject : "Checking post hook",
-		   body  : "heck"
+		   body  : "See ${env.BUILD_URL}"
    }	   
  }  
 }
