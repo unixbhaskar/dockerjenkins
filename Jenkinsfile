@@ -20,7 +20,7 @@ pipeline {
 		sh 'vmstat 1 1'
             }
         }
-    }
+    
     post {
         always {
 	    mail to : 'unixbhaskar@gmail.com',
