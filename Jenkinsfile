@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'git ls .'
+		sh 'git log -1'
             }
         }
         stage('Deploy') {
