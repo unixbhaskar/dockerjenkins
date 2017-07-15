@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'ls -lath'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-		sh 'ipcs'
+		sh 'git ls .'
             }
         }
         stage('Deploy') {
