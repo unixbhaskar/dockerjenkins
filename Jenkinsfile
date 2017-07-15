@@ -5,10 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen1'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen2'
             }
         }
-	}
+	
         stage('Test') {
             steps {
                 echo 'Testing..'
@@ -21,7 +21,7 @@ pipeline {
 		sh 'vmstat 1 1'
             }
         }
-    
+    }
     post {
         always {
 	    mail to : 'unixbhaskar@gmail.com',
