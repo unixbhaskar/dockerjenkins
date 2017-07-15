@@ -5,9 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen1'
             }
         }
+	}
         stage('Test') {
             steps {
                 echo 'Testing..'
