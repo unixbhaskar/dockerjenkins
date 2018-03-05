@@ -18,18 +18,18 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
-		sh 'vmstat 1 1'
+		sh '/home/bhaskar/AdmScripts/version-check.sh'
             }
         }
 
-      post {
-        success {
+         post {
+           success {
             echo 'Build succeeded.'
         }
-        unstable {
+           unstable {
             echo 'This build returned an unstable status.'
         }
-        failure {
+           failure {
             echo 'This build has failed. See logs for details.'
         }
       }
