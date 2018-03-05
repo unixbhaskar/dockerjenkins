@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen8'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen11'
             }
         }
 	
