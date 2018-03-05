@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen6'
+                echo 'Building..Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen7'
             }
         }
 	
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing.. Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
 		sh 'git log -1'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying....Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
 		sh 'vmstat 1 1'
             }
         }
