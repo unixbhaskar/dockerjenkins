@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
-		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen20'
+		sh 'git clone https://github.com/unixbhaskar/dockerjenkins.git docksjen21'
             }
         }
 	
@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
-		sh '/home/bhaskar/AdmScripts/version-check.sh'
+		sh '/home/bhaskar/Adm_scripts/version-check.sh'
             }
         }
 
