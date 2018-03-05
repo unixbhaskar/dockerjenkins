@@ -22,17 +22,6 @@ pipeline {
             }
         }
 
-         post {
-           success {
-            echo 'Build succeeded.'
-        }
-           unstable {
-            echo 'This build returned an unstable status.'
-        }
-           failure {
-            echo 'This build has failed. See logs for details.'
-        }
-      }
   }
 }
    
