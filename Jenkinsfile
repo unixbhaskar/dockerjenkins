@@ -22,11 +22,11 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-	    mail to : 'unixbhaskar@gmail.com',
-                 subject : "Checking post hook",
-		   body  : "See ${env.BUILD_URL}"
-   }	   
- }  
+#    post {
+#        always {
+#	    mail to : 'unixbhaskar@gmail.com',
+#                 subject : "Checking post hook",
+#		   body  : "See ${env.BUILD_URL}"
+#   }	   
+# }  
 }
